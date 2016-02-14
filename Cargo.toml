@@ -4,4 +4,4 @@ version = "0.1.0"
 authors = ["Johann <git@johann-hofmann.com>"]
 
 [dependencies]
-liquid = "0.3"
+liquid = "0.4"
