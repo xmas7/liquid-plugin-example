@@ -1,7 +1,7 @@
 language: rust
 before_script: 
 - |
-  cargo install --git https://github.com/rust-lang-nursery/rustfmt
+  cargo install --git https://github.com/rust-lang-nursery/rustfmt &&
   export PATH=$HOME/.cargo/bin:$PATH
 
 script:
