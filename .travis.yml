@@ -1,7 +1,8 @@
 language: rust
 before_script: cargo install --git https://github.com/rust-lang-nursery/rustfmt
 script:
-  - cargo fmt -- --write-mode=diff
-  - cargo build
-  - cargo test
+- |
+  cargo build &&
+  cargo fmt -- --write-mode=diff &&
+  cargo test
 
