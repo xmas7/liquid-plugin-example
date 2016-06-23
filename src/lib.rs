@@ -3,16 +3,16 @@ use liquid::Renderable;
 use liquid::Context;
 use liquid::Template;
 use liquid::LiquidOptions;
-use liquid::lexer::Token;
+use liquid::Token;
 use liquid::lexer::Element;
 use liquid::Error;
 use liquid::parser;
 
-struct Shout<'a> {
-    inner: Template<'a>,
+struct Shout{
+    inner: Template,
 }
 
-impl<'a> Renderable for Shout<'a> {
+impl Renderable for Shout {
     fn render(&self, context: &mut Context) -> Result<Option<String>, Error> {
         Ok(try!(self.inner.render(context)).map(|content| content.to_uppercase()))
     }
