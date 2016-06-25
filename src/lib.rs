@@ -8,7 +8,7 @@ use liquid::lexer::Element;
 use liquid::Error;
 use liquid::parser;
 
-struct Shout{
+struct Shout {
     inner: Template,
 }
 
